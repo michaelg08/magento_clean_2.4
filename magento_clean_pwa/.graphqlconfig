@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "magento_clean_pwa": {
+      "schemaPath": "merged-schema.v3.json",
+      "includes": [
+        "**/client-schema.graphql"
+      ],
+      "extensions": {
+        "endpoints": {
+          "default": "${env:MAGENTO_BACKEND_URL}/graphql"
+        }
+      }
+    }
+  }
+}
